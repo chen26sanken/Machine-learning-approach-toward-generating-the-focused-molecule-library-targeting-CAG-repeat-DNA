@@ -5,6 +5,9 @@ This repository contains the code and resources for the manuscript titled "Gener
 ## Figure
 
 ![Figure 1](https://github.com/chen26sanken/RF_Generation-of-a-focused-molecule-library-by-machine-learning-targeting-CAG-repeat-DNA/assets/141697122/edf39299-bb11-48ee-adfd-59ce86e6fb8a)
+(A) The training (left) data proportion with the down-sampling adjustment shown in Table S3, entry 4 in ESI; the testing (right) data proportion without adjustment.
+(B) The confusion matrix on the testing dataset. The confusion matrix with the highest recall (upper) and the highest precision (bottom).
+(C) Receiver operating characteristic (ROC) curve with 3-fold cross-validation of the RF model performance.
 
 
 ## Evaluation Scores in Applying Down-Sampling (Hit Class)
@@ -20,9 +23,9 @@ Table S3: The evaluation scores in applying down-sampling. (The scores in this t
 | 5 | 0.89 | 0.96 | 0.11 | 0.13 | 0.20 | 0.23 | 76:49 | 1475 |
 | 6 | 0.94 | 1 | 0.09 | 0.12 | 0.18 | 0.21 | 76:39 | 1485 |
 
-<sup>a</sup> Average scores obtained from 100 recorded prediction scores where the non-hits removed in each replicate experiment differed. The five top and bottom values were excluded from the calculation.
-<sup>b</sup> Highest scores obtained from 100 recorded prediction scores where the non-hits removed in each replicate experiment differed.
-<sup>c</sup> Non-hits dropped in the whole dataset.
+<sup>a</sup>Average scores obtained from 100 recorded prediction scores where the non-hits removed in each replicate experiment differed. The five top and bottom values were excluded from the calculation.
+<sup>b</sup>Highest scores obtained from 100 recorded prediction scores where the non-hits removed in each replicate experiment differed.
+<sup>c</sup>Non-hits dropped in the whole dataset.
 
 ## Dataset
 
