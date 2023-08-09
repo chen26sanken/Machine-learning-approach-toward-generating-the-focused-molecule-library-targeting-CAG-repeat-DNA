@@ -1,6 +1,6 @@
 # RF_Generation-of-a-focused-molecule-library-by-machine-learning-targeting-CAG-repeat-DNA
 
-This repository contains the code and resources for the manuscript titled "RF Generation of a Focused Molecule Library by Machine Learning Targeting CAG-repeat DNA."
+This repository contains the code and resources for the manuscript "Generation of a Focused Molecule Library by Machine Learning Targeting CAG-repeat DNA."
 
 ## Figure
 
