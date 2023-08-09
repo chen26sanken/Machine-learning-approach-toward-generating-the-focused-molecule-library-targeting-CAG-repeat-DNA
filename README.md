@@ -1,18 +1,28 @@
 # RF_Generation-of-a-focused-molecule-library-by-machine-learning-targeting-CAG-repeat-DNA
 
-This repository contains the code and resources for the manuscript "Generation of a Focused Molecule Library by Machine Learning Targeting CAG-repeat DNA."
+This repository contains the code and resources for the manuscript titled "Generation of a Focused Molecule Library by Machine Learning Targeting CAG-repeat DNA."
 
 ## Figure
 
 ![Figure 1](https://github.com/chen26sanken/RF_Generation-of-a-focused-molecule-library-by-machine-learning-targeting-CAG-repeat-DNA/assets/141697122/edf39299-bb11-48ee-adfd-59ce86e6fb8a)
 
-## Performance Results
 
-The performance results for different attempts are shown in the following table:
+## Evaluation Scores in Applying Down-Sampling (Hit Class)
 
-| Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11 | #12 |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | ... |
+Table S3: The evaluation scores in applying down-sampling. (The scores in this table are for the hit class)
+
+| entry | average recall<sup>a</sup> | highest recall<sup>b</sup> | average precision<sup>a</sup> | highest precision<sup>b</sup> | average F1<sup>a</sup> | highest F1<sup>b</sup> | hits:non-hits in training | dropped non-hits<sup>c</sup> |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 1 | 0.17 | 0.32 | 0.51 | 0.8 | 0.26 | 0.43 | 76:324 | 1200 |
+| 2 | 0.31 | 0.5 | 0.41 | 0.75 | 0.36 | 0.48 | 76:224 | 1300 |
+| 3 | 0.54 | 0.64 | 0.28 | 0.38 | 0.37 | 0.45 | 76:124 | 1400 |
+| 4 | 0.75 | 0.86 | 0.16 | 0.21 | 0.26 | 0.33 | 76:74 | 1450 |
+| 5 | 0.89 | 0.96 | 0.11 | 0.13 | 0.20 | 0.23 | 76:49 | 1475 |
+| 6 | 0.94 | 1 | 0.09 | 0.12 | 0.18 | 0.21 | 76:39 | 1485 |
+
+<sup>a</sup> Average scores obtained from 100 recorded prediction scores where the non-hits removed in each replicate experiment differed. The five top and bottom values were excluded from the calculation.
+<sup>b</sup> Highest scores obtained from 100 recorded prediction scores where the non-hits removed in each replicate experiment differed.
+<sup>c</sup> Non-hits dropped in the whole dataset.
 
 ## Dataset
 
