@@ -29,7 +29,7 @@ Table S3: The evaluation scores in applying down-sampling. (The scores in this t
 
 ## Dataset
 
-The dataset used in the study consists of 2000 small molecule compounds. The original dataset can be found here: [Dragon_2000cpds.csv](Dragon_2000cpds.csv).
+The dataset used in the study consists of 2000 small molecule compounds. The original dataset can be found here: [Dragon_2000cpds.csv.zip](Dragon_2000cpds.csv.zip).
 
 ## Scripts
 
