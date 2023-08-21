@@ -3,8 +3,8 @@
 This repository contains the code and resources for the manuscript titled "Generation of a Focused Molecule Library by Machine Learning Targeting CAG-repeat DNA."
 
 ## Figure
+![Figure](https://github.com/chen26sanken/RF_Generation-of-a-focused-molecule-library-by-machine-learning-targeting-CAG-repeat-DNA/assets/141697122/ee26ee9e-7d5c-46fb-98ab-50d6f06d8a52)
 
-![Figure 1](https://github.com/chen26sanken/RF_Generation-of-a-focused-molecule-library-by-machine-learning-targeting-CAG-repeat-DNA/assets/141697122/edf39299-bb11-48ee-adfd-59ce86e6fb8a)
 (A) The training (left) data proportion with the down-sampling adjustment shown in Table S3, entry 4 in ESI; the testing (right) data proportion without adjustment.
 (B) The confusion matrix on the testing dataset. The confusion matrix with the highest recall (upper) and the highest precision (bottom).
 (C) Receiver operating characteristic (ROC) curve with 3-fold cross-validation of the RF model performance.
