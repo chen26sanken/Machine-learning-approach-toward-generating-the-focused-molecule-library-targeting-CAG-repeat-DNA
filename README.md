@@ -39,6 +39,21 @@ The following scripts are provided in this repository:
 2. [categorical_index.py](categorical_index.py): Required module for over-sampling.
 3. [2-plot_feature_importance_ver2.py](2-plot_feature_importance_ver2.py): Modified plotting script for feature importance.
 
+## Requirements
+
+The following Python packages are required to run the code in this repository. You can install them using `pip` or any other suitable package manager:
+
+```plaintext
+numpy~=1.21.6
+scikit-learn~=1.1.1
+shap~=0.41.0
+matplotlib~=3.5.1
+pandas~=1.4.3
+seaborn~=0.11.2
+tqdm~=4.64.1
+```
+
+
 ## Acknowledgments
 
 We acknowledge the contributions and support that have made this work possible.
