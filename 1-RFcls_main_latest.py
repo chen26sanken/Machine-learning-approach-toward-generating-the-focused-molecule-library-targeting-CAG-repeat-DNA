@@ -129,6 +129,10 @@ if __name__ == '__main__':
         # print('Respl %s' % Counter(y_train))
 
         my_max_depth = my_max_depth
+        # X_train = X_train.values.tolist()  # adjust the datatype for xgboost
+        # clf = XGBClassifier(max_depth=my_max_depth, random_state=0, n_estimators=num_tree) 
+        # commented out specifice lines when use xgb classifier to skip datatype errors 
+        
         clf = RandomForestClassifier(max_depth=my_max_depth, random_state=0, n_estimators=num_tree)
         clf.fit(X_train, y_train)
 
@@ -172,7 +176,7 @@ if __name__ == '__main__':
         importance_gini = clf.feature_importances_  # compute the feature importance
         importance_gini_all.append(importance_gini)  # append
 
-        # compute the importance each experiment (shap value)
+        # compute the importance each experiment (shap value) (comment out line 178-183 when use xgboost)
         explainer = shap.TreeExplainer(clf, feature_perturbation='interventional')
         shap_values = explainer.shap_values(data_df)
         col_abs_sum = np.sum(np.abs(shap_values[0]), axis=0)
@@ -280,7 +284,7 @@ if __name__ == '__main__':
                 plt.savefig(the_outfile + '/' + 'feature_rank_' + main_info + '.png')
                 plt.close()
 
-                # SHAP implementation -------------------------------
+                # SHAP implementation ------------------------------- (comment out line 286-298 when use xgboost)
                 X = data_df
                 explainer = shap.TreeExplainer(clf, feature_perturbation='interventional')
                 shap_values = explainer.shap_values(X)
@@ -453,7 +457,7 @@ if __name__ == '__main__':
         for feature, s in sorted_sums:
             f.write(f"Sum of {feature}: {s}\n")
 
-    # shap sum
+    # shap sum (comment out line 459-467 when use xgboost)
     sums = np.sum(importance_shap_all, axis=0)
     sums_list = list(zip(feature_names, sums))
     sorted_sums = sorted(sums_list, key=lambda x: x[1], reverse=True)
